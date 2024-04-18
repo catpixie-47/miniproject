@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store - Payment Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+  <div class="container mx-auto p-4">
+    <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
+
+      <h1 class="text-2xl font-bold mb-4">Payment Details</h1>
+
+      <!-- Order Summary -->
+      <div class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Order Summary</h2>
+        <div class="flex justify-between items-center mb-2">
+          <span>Product Name</span>
+          <span>$399</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span>Total</span>
+          <span class="font-semibold">$399</span>
+        </div>
+      </div>
+
+      <!-- Payment Form -->
+      <form action="#" method="POST">
+        <!-- Payment Method -->
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700 mb-2">Payment Method</label>
+          <div class="flex items-center">
+            <input type="radio" id="online-payment" name="payment-method" value="online" class="mr-2" required>
+            <label for="online-payment" class="mr-4">Online Payment</label>
+            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash" class="mr-2" required>
+            <label for="cash-on-delivery">Cash on Delivery</label>
+          </div>
+        </div>
+
+        <!-- UPI Number -->
+        <div class="mb-4">
+          <label for="UPI-number" class="block text-sm font-medium text-gray-700">UPI Number</label>
+          <input type="text" id="UPI-number" name="UPI-number" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter UPI number" required>
+        </div>
+
+        <!-- phone no -->
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="phone number" class="block text-sm font-medium text-gray-700">phone number</label>
+            <input type="text" id="expiry" name="expiry" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="enter number" required>
+          </div>
+          <div>
+            <label for="Pin code" class="block text-sm font-medium text-gray-700">Pin code</label>
+            <input type="text" id="Pin code" name="Pin code" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter pin code" required>
+          </div>
+        </div>
+
+        <!-- dilivery Address -->
+        <div class="mb-4">
+          <label for="delivery-address" class="block text-sm font-medium text-gray-700">delivery Address</label>
+          <textarea id="delivery-address" name="delivery-address" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter delivery address" required></textarea>
+        </div>
+
+     
+</form>
+ <a href="file:///C:/Users/hp/Documents/succesfull.html" >
+        <button type="submit" class="w-full bg-indigo-500 text-white rounded-md py-2 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">Pay Now</button>
+        </a>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

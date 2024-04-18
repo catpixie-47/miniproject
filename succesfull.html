@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Status</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(90deg, #16A34A, #34D399);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .payment-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .payment-message {
+      font-size: 2rem;
+      color: #34D399;
+      margin-bottom: 20px;
+    }
+
+    .close-button {
+      background-color: #34D399;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-button:hover {
+      background-color: #16A34A;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="payment-container">
+    <div class="payment-message">
+      Ordered Successful
+    </div>
+    <button class="close-button" onclick="closeNotification()">Close</button>
+  </div>
+
+<p> Keep shopping and exploring the world of music</p>
+<br>
+</br>
+<p> Thank you!!!</p>
+  <script>
+    function closeNotification() {
+      document.querySelector('.payment-container').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
+
+<body>
+  <p class="message">Keep shopping and exploring the world of music</p>
+  <p class="thank-you">Thank you!!!</p>
+</body>
+
+</html>
